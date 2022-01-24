@@ -1,0 +1,45 @@
+.Home {
+  height: calc(100vh - 64px);
+}
+
+main {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heading h1 {
+  font-size: 120px;
+}
+
+.heading p {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  height: 20%;
+}
+
+.twitter {
+  color: rgb(1, 160, 223);
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.linkedin {
+  color: blue;
+  font-size: 30px;
+  margin-right: 20px;
+}
+
+.github {
+  color: black;
+  font-size: 30px;
+}

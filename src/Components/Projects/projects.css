@@ -1,0 +1,126 @@
+.projects-page {
+  height: calc(100vh - 64px);
+}
+
+.imageLink {
+  height: 100%;
+}
+
+.upperContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.lowerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.movieContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.headingg {
+  display: flex;
+  width: 58%;
+  color: rgb(44, 39, 39);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.movieAppImg {
+  margin-top: 10px;
+  width: 60%;
+  border-radius: 10px;
+  color: rgb(32, 30, 30);
+}
+
+.movieApplink {
+  text-decoration: none;
+  color: rgb(44, 39, 39);
+  font-size: 18px;
+  padding-top: 5px;
+  font-weight: 500;
+  width: 59%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.chatContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.chatAppImg {
+  margin-top: 10px;
+  width: 60%;
+  border-radius: 10px;
+}
+
+.chatAppLink {
+  text-decoration: none;
+  font-size: 18px;
+  padding-top: 5px;
+  font-weight: 500;
+  color: rgb(44, 39, 39);
+  width: 60%;
+}
+
+.travelContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 10px;
+}
+
+.travelAppImg {
+  margin-top: 10px;
+  width: 60%;
+  border-radius: 10px;
+}
+
+.travelPinLink {
+  text-decoration: none;
+  font-size: 18px;
+  padding-top: 5px;
+  font-weight: 500;
+  color: rgb(8, 8, 8);
+  width: 60%;
+}
+
+.blogContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 10px;
+}
+
+.blogAppImg {
+  margin-top: 10px;
+  width: 60%;
+  border-radius: 10px;
+}
+
+.blogAppLink {
+  text-decoration: none;
+  font-size: 18px;
+  padding-top: 5px;
+  font-weight: 500;
+  color: rgb(8, 8, 8);
+  width: 60%;
+}

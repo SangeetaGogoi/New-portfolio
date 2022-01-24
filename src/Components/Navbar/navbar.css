@@ -1,0 +1,118 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  height: 64px;
+}
+
+.leftBar {
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.leftBar:hover {
+  color: #fff;
+  background: #0075ff;
+  transition: all 0.3s ease;
+  padding: 8px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li .link {
+  text-decoration: none;
+  color: #1f2020;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 30px;
+  border-radius: 7px;
+  transition: all 0.3s ease;
+}
+
+ul li .link:hover {
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  background: #0075ff;
+}
+
+#icon {
+  background-color: #0075ff;
+  padding: 5px 7px 3px 7px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#icon svg {
+  color: #fff;
+  height: 28px;
+  transition: all 0.3s ease;
+}
+
+#icon:hover {
+  background: #fff;
+}
+
+#icon:hover svg {
+  color: #0075ff;
+}
+
+#checkbox,
+#icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navBar {
+    border-bottom: 1px solid #323c49;
+    background: #42648f;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 64px);
+    background: #42648f;
+    left: 0;
+    top: 0;
+    text-align: center;
+    display: none;
+    margin-top: 64px;
+  }
+
+  ul li {
+    display: block;
+    padding: 10px 15px;
+  }
+
+  ul li .link {
+    color: white;
+    display: block;
+    padding: 10px 30px;
+  }
+
+  #icon {
+    display: block;
+  }
+
+  #checkbox:checked ~ ul {
+    display: block;
+  }
+
+  .leftBar {
+    color: white;
+    font-size: 18px;
+  }
+}

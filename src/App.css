@@ -1,38 +1,253 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 .App {
-  text-align: center;
+  background: url(Background.png);
+  background-size: cover;
+  height: 100vh;
+  font-family: 'Rubik', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .rightBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  main {
+    padding: 20px;
+  }
+
+  .Home .heading h1 {
+    font-size: 70px;
+  }
+
+  .Home .heading p {
+    font-size: 50px;
+  }
+
+  .imageLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .imageLink .movieAppImg {
+    width: 60%;
+  }
+
+  .imageLink .chatAppImg {
+    width: 60%;
+  }
+
+  .imageLink .travelAppImg {
+    width: 60%;
+  }
+
+  .imageLink .blogAppImg {
+    width: 60%;
+  }
+
+  .imageLink .movieContainer h4 {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .imageLink .chatContainer h4 {
+    font-size: 16px;
+    font-weight: 650;
+  }
+
+  .imageLink .travelContainer h4 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .imageLink .blogContainer h4 {
+    font-size: 16px;
+    font-weight: 650;
+  }
+
+  .imageLink .contactImg {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .contact-page .clickButton {
+    background-color: coral;
+    width: 20%;
+    margin-top: 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 769px) and (max-width: 1285px) {
+  .imageLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .contact-page .clickButton {
+    background-color: coral;
+    width: 10%;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 850px) {
+  .main,
+  .heading {
+    padding: 20px;
+  }
+
+  .Home .heading h1 {
+    font-size: 80px;
+  }
+
+  .Home .heading p {
+    font-size: 50px;
+  }
+}
+
+/* homepage*/
+
+@media screen and (min-width: 850px) and (max-width: 917px) {
+  .main,
+  .heading {
+    padding: 10px;
+  }
+  .Home .heading h1 {
+    font-size: 80px;
+  }
+
+  .Home .heading p {
+    font-size: 50px;
+    font-weight: 500;
+  }
+}
+
+/*.contact-page button */
+
+@media screen and (min-width: 769px) and (max-width: 906px) {
+  .contact-page .clickButton {
+    background-color: coral;
+    width: 15%;
+    margin-top: 20px;
+  }
+}
+
+/*contact-page button */
+
+@media screen and (min-width: 290px) and (max-width: 521px) {
+  .contact-page .clickButton {
+    background-color: coral;
+    width: 30%;
+    margin-top: 20px;
+  }
+}
+
+/* contact-page button */
+
+@media screen and (min-width: 906px) and (max-width: 960px) {
+  .contact-page .clickButton {
+    background-color: coral;
+    width: 15%;
+    margin-top: 20px;
+  }
+}
+
+/* contact-page */
+
+@media screen and (min-width: 290px) and (max-width: 679px) {
+  .contact-page h3 {
+    margin-bottom: 15px;
+  }
+}
+
+/*project-page */
+
+@media screen and (min-width: 769px) and (max-width: 875px) {
+  .upperContainer {
+    width: 100%;
+  }
+
+  .imageLink .movieContainer h4 {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .imageLink .chatContainer h4 {
+    font-size: 16px;
+    font-weight: 650;
+  }
+
+  .imageLink .travelContainer h4 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .imageLink .blogContainer h4 {
+    font-size: 16px;
+    font-weight: 650;
+  }
+
+  .imageLink .contactImg {
+    width: 80%;
+    margin-top: 20px;
+  }
+}
+
+/* project-page*/
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .chatContainer {
+    margin-top: 20px;
+  }
+  .blogContainer {
+    margin-top: 20px;
+  }
+}
+
+/* project-page*/
+
+@media screen and (min-width: 320px) and (max-width: 460px) {
+  .chatContainer {
+    margin-top: 20px;
+  }
+  .blogContainer .blogAppImg {
+    margin-top: 20px;
+  }
+  .blogContainer {
+    margin-top: 90px;
+  }
+}
+
+/* Contact page logo*/
+@media screen and (min-width: 290px) and (max-width: 768px) {
+  .typeFormLogo {
+    display: none;
+  }
+}
+
+/* Contact page */
+
+@media screen and (min-width: 320px) and (max-width: 580px) {
+  .contactImg p {
+    font-size: 15px;
+    width: max-content;
+    text-align: center;
+  }
+}
+
+/*contact page */
+
+@media screen and (min-width: 678px) and (max-width: 770px) {
+  .contact-page h3 {
+    padding: 10px;
   }
 }
