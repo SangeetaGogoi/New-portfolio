@@ -26,11 +26,11 @@ export default function App() {
             element={<HomePage />}
           />
           <Route
-            path='/Projects'
+            path='/projects'
             element={<Projects />}
           />
           <Route
-            path='/Contact'
+            path='/contact'
             element={<Contact />}
           />
         </Routes>

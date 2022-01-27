@@ -32,12 +32,12 @@ export default function NavBar() {
             </Link>
           </li>
           <li>
-            <Link to='/Projects' className='link'>
+            <Link to='/projects' className='link'>
               Projects
             </Link>
           </li>
           <li>
-            <Link to='/Contact' className='link'>
+            <Link to='/contact' className='link'>
               Contact
             </Link>
           </li>
